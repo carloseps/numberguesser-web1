@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tente adivinhar qual número estou pensando..." />
+
+    <title>Adivinhe o Número</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <picture>
+                        <img src="./assets/img/element-logo.png" alt="Logo - Adivinhe o Número" />
+                    </picture>
+                    <h1>Guesss the Number</h1>
+                </div>
+
+                <button aria-label="Ajuda" class="help" type="button">
+                    <h1>?</h1>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <h1>Adivinhe o Número</h1>
+                <p>Tente adivinhar o número entre 0 e 50:</p>
+                <div class="box">
+                    <input type="number" id="userGuess" placeholder="Seu palpite">
+                    <button onclick="verificarPalpite()">Verificar Palpite</button>
+                    <button onclick="verNumero()">Ver Número</button>
+                    <p id="resultado"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script async src="./assets/js/script.js"></script>
+    <script async src="./assets/js/animations/fromBottom.js"></script>
+    <script async src="./assets/js/animations/fromLeft.js"></script>
+    <script async src="./assets/js/animations/fromRight.js"></script>
+
+</body>
+
+</html>
