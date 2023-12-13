@@ -7,7 +7,7 @@
     <meta name="description" content="Tente adivinhar qual número estou pensando..." />
 
     <title>Adivinhe o Número</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/element-logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -26,24 +26,28 @@
                     <h1>Guesss the Number</h1>
                 </div>
 
-                <button aria-label="Ajuda" class="help" type="button">
-                    <h1>?</h1>
-                </button>
-
             </div>
         </nav>
     </header>
     <main>
         <section id="home" class="home">
+            <div class="container-resume">
+                O site irá sortear um número de 0 a 1000 e você pode tentar adivinhar qual foi o número sorteado. Envie seus palpites até acertar ou verifique qual foi o número sorteado.
+            </div>
             <div class="container">
                 <h1>Adivinhe o Número</h1>
-                <p>Tente adivinhar o número entre 0 e 50:</p>
+                <p>Tente adivinhar o número entre 0 e 1000:</p>
                 <div class="box">
                     <input type="number" id="userGuess" placeholder="Seu palpite">
-                    <button onclick="verificarPalpite()">Verificar Palpite</button>
-                    <button onclick="verNumero()">Ver Número</button>
-                    <p id="resultado"></p>
+                    <button class="button1" onclick="verificarPalpite()">Verificar Palpite</button>
+                    <button class="button2" onclick="verNumero()">Ver Número</button>
                 </div>
+                <p id="resultado"></p>
+            </div>
+            <div class="historico">
+                <ul class="historico-lista">
+                    <!-- Lista vazia, será preenchida dinamicamente pelo JavaScript -->
+                </ul>
             </div>
         </section>
     </main>

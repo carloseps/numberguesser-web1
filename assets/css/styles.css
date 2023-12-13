@@ -127,17 +127,6 @@ section {
     font-size: 22px;
 }
 
-
-.navbar .container button {
-    height: 2.6rem;
-    width: 2.6rem;
-    border-radius: 50%;
-}
-
-.navbar .container button h1{
-    color: #acacac;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -148,6 +137,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: #cecece;
     color: #f3f3f3;
 }
@@ -157,16 +147,86 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     height: 50vh;
-    background: #acacac;
+}
+
+.home .container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home .container p{
+    width: 50%;
+}
+
+.home .container .box input{
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home .container .box button{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+}
+
+.home .container .box .button1{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+    background: #444;
+    border: none;
+    color: #fff;
+}
+
+.home .container .box .button1:hover{
+    background: #555555
+}
+
+.home .container .box .button2{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+    background: #fff;
+    border: none;
+    color: #444;
+}
+
+.home .container .box .button2:hover{
+    background: #e0e0e0
+}
+
+.home .container-resume {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+    height: 10vh;
+    width: 45%;
+    color:#707070
 }
 
 .home .container h1{
     font-size: 50px;
     display: block;
-    margin: 10px;
+    padding-bottom: 40px;
+    color: rgb(78, 78, 78);
+}
+
+.home .container p{
+    font-size: 17px;
+    display: block;
     color: rgb(78, 78, 78);
 }
 
